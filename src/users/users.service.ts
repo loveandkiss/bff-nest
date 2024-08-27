@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 // 使用 DataSource 在服务中进行操作
-import { AppDataSource } from '../index'
+import { AppDataSource } from '../data-source'
 // 实体
 import { User } from '../users/entities/user.entity'
 // 三个装饰器，用于在 NestJS 中进行依赖注入。它们分别用于注入 TypeORM 的 Entity Manager、Data Source 和 Repository。

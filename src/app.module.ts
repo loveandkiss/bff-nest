@@ -10,7 +10,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { User } from './users/entities/user.entity'
 import { AuthModule } from './auth/auth.module';
 // import { AuthService } from './auth/auth.service';
-import { configOptions } from './index'
+import { configOptions } from './data-source'
 
 
 @Module({
