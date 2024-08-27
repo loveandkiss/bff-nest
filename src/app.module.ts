@@ -10,21 +10,13 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { User } from './users/entities/user.entity'
 import { AuthModule } from './auth/auth.module';
 // import { AuthService } from './auth/auth.service';
+import { configOptions } from './index'
 
 
 @Module({
   // 导入
   imports: [
-    TypeOrmModule.forRoot({
-      "type": "mysql",
-      "host": "localhost",
-      "port": 3306,
-      "username": "root",
-      "password": "123456",
-      "database": "test",
-      "entities": [User],
-      "synchronize": true // 设置为 true 时，会自动创建数据表（仅用于开发环境）
-    }),
+    TypeOrmModule.forRoot(configOptions),
     // TypeOrmModule.forFeature([User]),
     AuthModule,
     UsersModule,
