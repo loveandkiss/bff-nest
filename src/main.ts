@@ -10,7 +10,7 @@ import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
 
 
 async function bootstrap() {
-  // console.log('process.env', process.env)
+  console.log('process.env', process.env)
   try {
     // 初始化数据源连接
     await AppDataSource.initialize()
