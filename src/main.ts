@@ -14,6 +14,7 @@ async function bootstrap() {
   console.log('测试触发Jenkins从仓库拉取源码')
   console.log('测试触发Jenkins从仓库拉取源码2')
   console.log('测试触发Jenkins从仓库拉取源码3')
+  console.log('测试触发Jenkins从仓库拉取源码4')
   try {
     // 初始化数据源连接
     await AppDataSource.initialize()
